@@ -79,12 +79,10 @@ class DMFindingGameViewController: UIViewController {
         if let index = randomArray.firstIndex(of: targetLetter) {
             randomArray.remove(at: index)
         }
-        var j = 24
         for _ in 1..<numLetters {
-            let i = Int.random(in: 0...j)
+            let i = Int.random(in: 0..<randomArray.count)
             randomLetters.append(randomArray[i])
             randomArray.remove(at: i)
-            j -= 1
         }
         randomLetters.insert(targetLetter, at: Int.random(in: 0..<numLetters))
         return randomLetters
