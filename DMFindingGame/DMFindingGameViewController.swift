@@ -19,20 +19,9 @@ class DMFindingGameViewController: UIViewController {
     @IBOutlet weak var targetLetterLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    @IBOutlet weak var f: UIButton!
-    @IBOutlet weak var i: UIButton!
-    @IBOutlet weak var r: UIButton!
-    @IBOutlet weak var s: UIButton!
+    @IBOutlet var letterButtons: [UIButton]!
     
-    @IBOutlet weak var t: UIButton!
-    @IBOutlet weak var a: UIButton!
-    @IBOutlet weak var b: UIButton!
-    @IBOutlet weak var c: UIButton!
-    
-    @IBOutlet weak var d: UIButton!
-    @IBOutlet weak var e: UIButton!
-    @IBOutlet weak var g: UIButton!
-    @IBOutlet weak var h: UIButton!
+   
     
 //        calculateNewScore(selectedLetter: sender.currentTitle!)
 //        newRound()
@@ -128,9 +117,12 @@ class DMFindingGameViewController: UIViewController {
      Hint: `UIButton`s have a `setTitle` function.
      */
     func updateLetterButtons() {
-        let titleArray: Array<UIButton> = [f, i, r, s, t, a, b, c, d, e, g, h]
-        for (index, element) in titleArray.enumerated() {
-            element.setTitle(randomLetters[index], for: .normal)
+//        let titleArray: Array<UIButton> = [f, i, r, s, t, a, b, c, d, e, g, h]
+//        for (index, element) in titleArray.enumerated() {
+//            element.setTitle(randomLetters[index], for: .normal)
+//        }
+        for (index, buttons) in letterButtons.enumerated() {
+            buttons.setTitle(randomLetters[index], for: .normal)
         }
     }
 }

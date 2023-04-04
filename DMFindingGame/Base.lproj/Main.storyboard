@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cLM-BX-Ev8">
-    <device id="retina6_72" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cLM-BX-Ev8">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,14 +13,14 @@
             <objects>
                 <viewController id="cLM-BX-Ev8" customClass="DMFindingGameViewController" customModule="DMFindingGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ZV-5E-ebi">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwg-MV-2VL" userLabel="scoreView">
-                                <rect key="frame" x="0.0" y="59" width="430" height="150"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGl-Pl-QxR">
-                                        <rect key="frame" x="392" y="18" width="20" height="20"/>
+                                        <rect key="frame" x="376" y="18" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="PBU-SG-WEu"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="dbm-70-2c1"/>
@@ -29,7 +30,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlG-lB-uDX">
-                                        <rect key="frame" x="190" y="50" width="50" height="50"/>
+                                        <rect key="frame" x="182" y="50" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="EhN-st-GdI"/>
                                             <constraint firstAttribute="height" constant="50" id="hxt-In-7MQ"/>
@@ -49,10 +50,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-pb-CPv" userLabel="topRowView">
-                                <rect key="frame" x="0.0" y="229" width="430" height="125"/>
+                                <rect key="frame" x="0.0" y="218" width="414" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-NG-ZZh" userLabel="letterStackView">
-                                        <rect key="frame" x="45" y="10" width="340" height="105"/>
+                                        <rect key="frame" x="37" y="10" width="340" height="105"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-Dn-CzP">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="105"/>
@@ -131,10 +132,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D06-E3-wqd" userLabel="middleRowView">
-                                <rect key="frame" x="0.0" y="374" width="430" height="125"/>
+                                <rect key="frame" x="0.0" y="363" width="414" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Awt-ab-hG1" userLabel="letterStackView">
-                                        <rect key="frame" x="45" y="10" width="340" height="105"/>
+                                        <rect key="frame" x="37" y="10" width="340" height="105"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5a-zx-Cbe">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="105"/>
@@ -213,10 +214,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-q0-FeG" userLabel="bottomRowView">
-                                <rect key="frame" x="0.0" y="519" width="430" height="125"/>
+                                <rect key="frame" x="0.0" y="508" width="414" height="125"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eyV-ef-P6k" userLabel="letterStackView">
-                                        <rect key="frame" x="45" y="10" width="340" height="105"/>
+                                        <rect key="frame" x="37" y="10" width="340" height="105"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlk-i3-BqZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="105"/>
@@ -314,20 +315,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="a" destination="OYb-xn-Ada" id="U17-R3-0m1"/>
-                        <outlet property="b" destination="az4-HB-5k1" id="R8i-5y-GOw"/>
-                        <outlet property="c" destination="6M4-Yv-3dN" id="PgH-ru-Lnw"/>
-                        <outlet property="d" destination="Hlk-i3-BqZ" id="KZE-9K-NxJ"/>
-                        <outlet property="e" destination="4Ag-Sa-npP" id="q7g-fM-tg3"/>
-                        <outlet property="f" destination="WbD-Dn-CzP" id="nYx-K9-0YH"/>
-                        <outlet property="g" destination="kVf-rr-3Qr" id="PAP-sf-heJ"/>
-                        <outlet property="h" destination="hPm-Jc-ClX" id="vvH-0L-5hm"/>
-                        <outlet property="i" destination="P2G-v3-NiZ" id="EfB-Cg-uya"/>
-                        <outlet property="r" destination="j8E-Nf-MBd" id="Njp-ch-YF5"/>
-                        <outlet property="s" destination="kps-f3-GSz" id="Cyj-lM-VhC"/>
                         <outlet property="scoreLabel" destination="oGl-Pl-QxR" id="gcG-Cf-ges"/>
-                        <outlet property="t" destination="D5a-zx-Cbe" id="3jz-H9-Vg2"/>
                         <outlet property="targetLetterLabel" destination="JlG-lB-uDX" id="JFw-cm-DaR"/>
+                        <outletCollection property="letterButtons" destination="WbD-Dn-CzP" collectionClass="NSMutableArray" id="b2f-oZ-nFQ"/>
+                        <outletCollection property="letterButtons" destination="P2G-v3-NiZ" collectionClass="NSMutableArray" id="6sc-5E-eO4"/>
+                        <outletCollection property="letterButtons" destination="j8E-Nf-MBd" collectionClass="NSMutableArray" id="ZzQ-XZ-16y"/>
+                        <outletCollection property="letterButtons" destination="kps-f3-GSz" collectionClass="NSMutableArray" id="NB6-LN-Oa8"/>
+                        <outletCollection property="letterButtons" destination="D5a-zx-Cbe" collectionClass="NSMutableArray" id="VMs-sS-NaZ"/>
+                        <outletCollection property="letterButtons" destination="OYb-xn-Ada" collectionClass="NSMutableArray" id="WBl-dw-Ndu"/>
+                        <outletCollection property="letterButtons" destination="az4-HB-5k1" collectionClass="NSMutableArray" id="b1Q-iv-6BK"/>
+                        <outletCollection property="letterButtons" destination="6M4-Yv-3dN" collectionClass="NSMutableArray" id="BDp-9Q-Vrt"/>
+                        <outletCollection property="letterButtons" destination="Hlk-i3-BqZ" collectionClass="NSMutableArray" id="R1g-8J-crH"/>
+                        <outletCollection property="letterButtons" destination="4Ag-Sa-npP" collectionClass="NSMutableArray" id="9Si-sW-1Qa"/>
+                        <outletCollection property="letterButtons" destination="kVf-rr-3Qr" collectionClass="NSMutableArray" id="7R0-DP-50W"/>
+                        <outletCollection property="letterButtons" destination="hPm-Jc-ClX" collectionClass="NSMutableArray" id="g5a-Z8-7oS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b22-Od-7or" sceneMemberID="firstResponder"/>
